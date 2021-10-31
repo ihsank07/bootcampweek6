@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Akademisyen Sayfası
+{% endblock %}
+
+{% block body %}
+
+
+	<h1>Akademisyenlerimiz</h1>
+
+	{% for akademi in akademiler %}
+		<p>
+
+			{{akademi.getAd()}}
+			{{akademi.getSoyad()}}
+		</p>
+
+	{% endfor %}
+
+{% endblock %}

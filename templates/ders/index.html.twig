@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ders Sayfası!
+{% endblock %}
+{% block body %}
+	<h1>Dersimiz</h1>
+	<p>
+		Dersin adı:
+	</p>
+	<p>
+		{{ders.getDersAdi()}}
+	</p>
+	<p>
+		Dersin kodu:
+	</p>
+	{{ders.getDersKodu()}}
+	<p>
+		Dersin Açıklaması:
+	</p>
+	<p>
+		{{ders.getDersAciklamasi()}}
+	</p>
+
+	<p>
+		Dersi Veren Hoca : {{ders.getAkademisyen().getAd()}}
+
+		{{ders.getAkademisyen().getSoyad()}}
+
+	</p>
+Dersi Alan Öğrenciler:
+{% for item in ders.getAlanlar() %}
+<p>
+
+{{item.getAd()}}
+{{item.getSoyad()}}
+
+
+{% endfor %}
+
+{% endblock %}

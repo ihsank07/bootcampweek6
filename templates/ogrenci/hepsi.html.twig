@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ders Sayfası{% endblock %}
+
+{% block body %}
+	<h1>Öğrencilerimiz</h1>
+
+	{% for d in ogrenciler %}
+		<p>
+			{{d.getAd()}}	
+            {{d.getSoyad()}}		
+		</p>
+
+	{% endfor %}
+
+{% endblock %}
