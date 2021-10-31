@@ -3,10 +3,12 @@
 {% block title %}Öğrenci Sayfası!{% endblock %}
 
 {% block body %}
-<h1>Öğrencilerimiz</h1>
+<h1>Öğrencimiz</h1>
 {{ogrenci.getAd()}}
 {{ogrenci.soyad}}
-
+<h1>
+Aldığı Dersler:
+</h1>
 {% for item in ogrenci.getAlinanDers() %}
 <p>
 {{item.getDersAdi()}}

@@ -34,7 +34,7 @@ class AkademisyenController extends AbstractController
    */
   public function index(int $id): Response
   {
-
+   
     $akademi = $this->getDoctrine()->getRepository(Akademisyen::class)->find($id);
 
     $ders = $akademi->getDersAdi();

@@ -15,7 +15,9 @@ class OgrenciController extends AbstractController
     public function load(): Response
     {   
         $entityManager = $this->getDoctrine()->getManager();
+       
         $ogrenciler = $this->getDoctrine()->getRepository(Ogrenci::class)->findAll();
+
         return $this->render('ogrenci/hepsi.html.twig',[
             'ogrenciler' => $ogrenciler,
           ]
@@ -27,6 +29,7 @@ class OgrenciController extends AbstractController
      */
     public function index(Ogrenci $ogrenci): Response
     {
+      
           return $this->render('ogrenci/index.html.twig',[
               'ogrenci' => $ogrenci
 
