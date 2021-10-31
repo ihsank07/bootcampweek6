@@ -1,6 +1,6 @@
 # assignment6-ihsankaandelice
 
-#SYMFONY İLE İLİŞKİSEL VERİ YAPISI OLUŞTURMA (100 puan)
+# SYMFONY İLE İLİŞKİSEL VERİ YAPISI OLUŞTURMA (100 puan)
 
 Akademisyenlerle ilgili bir sınıf oluşturulmalıdır. Oluşturulan bu sınıfta aşağıdaki öznitelikler bulunmalıdır.
 ad, soyad, uzmanlık
@@ -13,7 +13,7 @@ dersAdi, dersKodu, dersAciklamasi
 
 Projenizde bu sınıflara ait ilgili tabloları mutlaka oluşturunuz. Oluşturduğunuz tablolarda rastgele deneme amaçlı birkaç veri giriniz. Ekstra tablo kullanımı geliştiriciye bağlıdır.
 
-#Örnek Veri:
+# Örnek Veri:
 Akademisyen için: Muhammet, Çıralı, Semantik
 
 Öğrenci için: Cenk, Akıncı, 2104467
@@ -21,12 +21,12 @@ Akademisyen için: Muhammet, Çıralı, Semantik
 
 Ders için: Nesnesel Tasarıma Giriş, CENG201, Nesneye yönelik progrlama ile kodlama pratikleri
 
-#Örnek Çıktı:
+# Örnek Çıktı:
 Akademisyen için: Verdiği derslerin listesi
 Öğrenci için: Aldığı derslerin listesi
 Ders için: Eğitimi veren akademisyen ve dersi alan öğrencilerin listesi
 
-#Uygulamanızda aşağıdaki kriterler zorunludur:
+# Uygulamanızda aşağıdaki kriterler zorunludur:
 
 Bir öğrenci birden fazla ders alabilir.
 
